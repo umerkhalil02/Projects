@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">387364964478-162fq3skil8aas4rt2crvfpnhrurnnng.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">387364964478</string>
+    <string name="google_api_key" translatable="false">AIzaSyCoaeiFmBndJy0V6syz5yfTbSBqcN_8jxs</string>
+    <string name="google_app_id" translatable="false">1:387364964478:android:deed7a307772d265fd302f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCoaeiFmBndJy0V6syz5yfTbSBqcN_8jxs</string>
+    <string name="google_storage_bucket" translatable="false">cew-project.appspot.com</string>
+    <string name="project_id" translatable="false">cew-project</string>
+</resources>

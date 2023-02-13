@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NED Student Security</string>
+    <string name="dash_title">Dashboard</string>
+    <string name="about_title">About Us</string>
+    <string name="mentor_title">Mentor</string>
+    <string name="login_title">Login Page</string>
+    <string name="register_title">Register Page</string>
+    <string name="motivation"><u>MOTIVATION:</u></string>
+    <string name="aim"><u>AIM:</u></string>
+    <string name="creators"><u>CREATED BY:</u></string>
+    <string name="mentor"><u>Miss Mehwish Raza</u></string>
+    <string name="motivation_text">The rise and possibility of occurring an incident that violates NED discipline motivated
+ us to develop such an app that equips every student with basic need to call for help whenever
+ threatened by any such act.</string>
+    <string name="aim_text">Our application aims to protect people from physical violence, whether within the NED or
+ outside the premises of NED, from violent individuals, from domestic abuse, or from predatory adults.</string>
+    <string name="mentor_text">Our group has been fortunate enough to have Miss Mehwish as mentor as she has consistently
+ maintained strong business ethics while keeping a smile on her face. She has been more of
+ a friend than our teacher through out semester and made sure that we achieve our potential
+ and it was her way of teaching that made us put in the effort. Thanks for being a good
+ mentor and for guiding us. We will always be thankful to you.</string>
+    <string name="creators_name">1.Farrrukh Siddiqui (CS-20090) \n2. Muhammad Faizan (CS-20098) \n3.Hamza Naveed (CS-20119)
+\n4. Umer Khalil (CS-20135)</string>
+</resources>

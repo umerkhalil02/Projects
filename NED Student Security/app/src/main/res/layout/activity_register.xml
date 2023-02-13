@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".Register">
+    <ProgressBar
+        android:id="@+id/rprogressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="180dp"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@+id/rprogressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Tap here to Log In!"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="145dp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="313dp"
+        android:layout_height="193dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="313dp"
+            android:layout_height="193dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/mname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_person"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/memail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_email"
+                android:ems="10"
+                android:hint="Enter Email"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_password"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mphonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter Phone Number"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mphonenumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter Priority 1 Number"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mphonenumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter Priority 2 Number"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/mphonenumber3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableStart="@drawable/custom_phone"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Enter Priority 3 Number"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="157dp"/>
+
+
+
+</RelativeLayout>

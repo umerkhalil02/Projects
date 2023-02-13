@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cewproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CEWProject">
+        <activity
+            android:label="@string/mentor_title"
+            android:name=".Mentor"
+            android:exported="false"
+            android:parentActivityName=".Dashboard"/>
+        <activity
+            android:label="@string/about_title"
+            android:name=".About"
+            android:exported="false"
+            android:parentActivityName=".Dashboard"/>
+        <activity
+            android:label="@string/dash_title"
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:label="@string/register_title"
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:label="@string/login_title"
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
