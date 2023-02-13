@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical"
+    tools:context=".AddActivity"
+    tools:layout_editor_absoluteX="-10dp"
+    tools:layout_editor_absoluteY="94dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/back" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="1dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navigation" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="2dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="-46dp">
+
+            <EditText
+                android:id="@+id/mosquename"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_mosque_icon"
+                android:ems="10"
+                android:hint="Enter Mosque Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textCursorDrawable="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+
+
+
+
+
+
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ]]>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Select Sect of Mosque"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mosquename" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <RadioButton
+                    android:id="@+id/radioButton_barelvi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="Hanafi Barelvi"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.19"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_deobandi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:buttonTint="@color/black"
+                    android:text="Hanafi Deobandi"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.797"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_shia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:text="Shia Ansari Ashri"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.209"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioButton_barelvi" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/editTextZuhrTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Zuhr Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextFajrTime" />
+
+            <TextView
+                android:id="@+id/editTextAsrTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Asr Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextZuhrTime" />
+
+            <TextView
+                android:id="@+id/editTextMaghribTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Maghrib Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAsrTime" />
+
+            <TextView
+                android:id="@+id/editTextIshaTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Isha Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMaghribTime" />
+
+            <TextView
+                android:id="@+id/editTextJummaTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Jumma Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextIshaTime" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#A99675"
+                android:gravity="center"
+                android:text="Add Mosque"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextJummaTime"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/editTextFajrTime"
+                android:layout_width="210dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="?attr/editTextBackground"
+                android:backgroundTint="#000000"
+                android:drawableStart="@drawable/custom_clock_icon"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Fajr Time"
+                android:inputType="time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/common_google_signin_btn_text_light"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
